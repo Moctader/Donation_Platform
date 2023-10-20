@@ -128,8 +128,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
-STATIC_ROOT=BASE_DIR/'static'
-print(STATIC_ROOT)
+# STATIC_ROOT=BASE_DIR/'static'
+# print(STATIC_ROOT)
 
 MEDIA_ROOT = BASE_DIR / 'media'
 STATICFILES_DIRS = [
