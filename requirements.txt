@@ -6,3 +6,4 @@ sqlparse == 0.4.3
 tzdata == 2022.7
 djangorestframework==3.14.0
 django-tinymce==3.6.1
+sslcommerz-lib=1.0
