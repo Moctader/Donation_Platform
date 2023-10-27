@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-*d2a-kmkzrxyv0!dtr(fht1&_1fh#c_6jy=(zn_@lci!m$_=n$
 DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -83,34 +84,12 @@ WSGI_APPLICATION = 'Charity_Donation_Platform.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-        'OPTIONS': {
-            'deterministic': True,
-        },
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'your_database_name',
-#         'USER': 'your_database_user',
-#         'PASSWORD': 'your_database_password',
-#         'HOST': 'localhost',  # Use the PostgreSQL server host
-#         'PORT': '',  # Leave this empty for the default port (5432)
-#     }
-# }
 
 
 # Password validation
@@ -149,8 +128,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
-# STATIC_ROOT=BASE_DIR/'static'
-# print(STATIC_ROOT)
 
 MEDIA_ROOT = BASE_DIR / 'media'
 STATICFILES_DIRS = [
